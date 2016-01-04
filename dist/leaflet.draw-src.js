@@ -242,7 +242,7 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 			this._map.addLayer(this._markerGroup);
 
 			this._poly = new L.Polyline([], this.options.shapeOptions);
-			this._poly.spliceLatLngs = function(index, count, toAdd) {
+			this._poly.spliceLatLngs = function (index, count, toAdd) {
 				var latLngs = this._latlngs,
 					res;
 
